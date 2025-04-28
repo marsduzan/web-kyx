@@ -1,0 +1,233 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+text-decoration: none;
+font-size: 13px;
+font-family: 'Roboto', sans-serif;
+font-weight: 400;
+}
+
+
+body {
+background-color: aliceblue;
+color: black;
+min-height: 100vh;
+}
+
+
+.main-header {
+background-color: aliceblue;
+padding: 30px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+height: 60px;
+text-transform: uppercase;
+
+}
+
+
+.nav-left, .nav-logo {
+display: flex;
+gap: 20px;
+align-items: center;
+margin-left: 10px;
+position: relative;
+}
+
+
+.nav-right {
+display: flex;
+gap: 20px;
+align-items: center;
+margin-right: 10px;
+}
+
+
+#logo-kyx img {
+width: 40px;
+height: auto;
+}
+
+
+a {
+color: inherit;
+}
+
+
+main.content {
+padding: 2rem;
+}
+
+
+.nav-right a i {
+font-size: 24px; 
+}
+
+
+.banner img {
+width: 100%;
+height: 720px;
+object-fit: cover;
+object-position: center top;
+}
+
+
+.banner-texto {
+position: absolute;
+bottom: 10%;
+left: 5%;
+text-align: left;
+color: aliceblue;
+
+}
+
+
+.banner-texto h2 {
+font-size: 3rem;
+margin-bottom: 0.5rem;
+font-weight: 500;
+text-shadow: 1px 1px black;
+}
+
+
+.banner-texto p {
+font-size: 2rem;
+text-shadow: 1px 1px black;
+}
+
+
+.nav-left a:hover{
+text-decoration: underline;
+
+
+}
+
+
+.section-productos {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 20px;
+padding: 0 20px;
+margin-bottom: 30px;
+
+}
+.imagen-prod {
+width: 100%;
+height: 400px;
+object-fit: cover;
+display: block;
+object-position: center bottom;
+}
+
+
+.top-tendecias{
+font-size: 1.5rem;
+margin-top: 20px;
+margin-bottom: 10px;
+
+
+}
+
+
+.ver-todo{
+font-size: 1.2rem;
+margin-bottom: 20px;
+}
+
+
+.tnd{
+
+
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+padding: 1.5rem 0;
+}
+
+
+.ver-todo:hover{
+text-decoration: underline;
+
+
+}
+
+
+.añadir-carrito{
+background-color: rgba(209, 209, 209, 0.3);
+padding: 10px;
+width: 100%;
+border: none;
+cursor: pointer;
+margin-bottom: 10px;
+}
+
+
+.añadir-carrito:hover{
+background-color: rgba(209, 209, 209, 0.5);
+transition: background-color 0.3s ease;
+}
+
+
+.nombre-prod{
+font-size: 1.2rem;
+margin-bottom: 5px;
+}
+.precio-prod{
+font-size: 1.1rem;
+margin-bottom: 50px;
+}
+
+
+.banner2{
+display: flex;
+height: 90vh;
+}
+
+
+.imagen-banner2{
+width: 50%;
+height: 100%;
+object-fit: cover;
+
+}
+
+
+.texto-banner2 {
+width: 50%;
+padding: 2rem;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+text-align: left;
+
+
+}
+
+
+.mini-titulo {
+font-size: 3rem;
+margin-bottom: 1rem;
+font-weight: 500;
+}
+
+
+.descripcion-banner2 {
+font-size: 5rem;
+line-height: 1.2;
+font-weight: bold;
+}
+
+
+.descripcion2-banner2{
+font-size: 1.5em;
+font-weight: 500;
+}
+
+
+.descripcion2-banner2:hover{
+text-decoration: underline;
+}
