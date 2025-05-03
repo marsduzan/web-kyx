@@ -61,6 +61,7 @@ width: 100%;
 height: 100vh;
 object-fit: cover;
 display: block;
+object-position: top;
 }
 
 .banner-texto {
@@ -309,12 +310,12 @@ border-color: #555;
     transition: 0.2s ease ;
 }
 
-.blog{
+.blog, .blog2{
     width: 100%;
     padding: 3rem;
 }
 
-.img-blog {
+.img-blog, .img-correr-blog {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     justify-items: center; 
@@ -328,15 +329,15 @@ border-color: #555;
     
 }
 
-.titulo-redes{
+.titulo-redes, .titulo-blog{
     padding: 2rem;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 500;
 }
 
 footer{
     width: 100%;
-    height: 500px;
+    height: 400px;
     background-color: black;
     display: flex;
 
@@ -345,19 +346,53 @@ footer{
 .sec1, .sec2, .sec3{
     width: 700px;
     padding: 2rem;
-    
+    height: 300px;
     border-right: 1px solid white;
+    margin-top: 50px;
+    color: white;
 }
 .sec1 a{
     text-decoration: none;
     color: white;
     display: flex;
     flex-direction: column;
+    margin-bottom: 20px;
+    font-weight: 100;
 }
 
 .titulo-footer{
-    padding: 2rem;
+    margin-bottom: 20px;
     font-size: 2rem;
     font-weight: 500;
+}
+
+.politica, .contactos{
+    margin-bottom: 10px;
+}
+
+.sec3{
+    border: none;
+}
+
+.footer2 {
+    display: flex;
+    background-color: black;
+    justify-content: end;
+    border-top: 1px solid white;
+}
+
+.politica-otros{
     color: white;
+    text-decoration: none;
+    padding: 1rem;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 0.8rem;
+}
+
+.img-correr{
+    width: 100%; 
+    height: 700px;
+    object-fit: cover;
+    padding: 15px;
 }
