@@ -1,0 +1,214 @@
+/* Main styles */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Roboto', sans-serif;
+}
+
+body {
+background-color: whitesmoke;
+color: #000;
+min-height: 100vh;
+}
+
+/* Header */
+.main-header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0.1rem 2rem;
+background-color: whitesmoke;
+position: sticky;
+top: 0;
+z-index: 1000;
+}
+
+.nav-logo img {
+width: 50px;
+height: auto;
+}
+
+.nav-left,
+.nav-right {
+display: flex;
+gap: 1.5rem;
+align-items: center;
+}
+
+.nav-left a,
+.nav-right a {
+color: inherit;
+text-decoration: none;
+font-weight: 500;
+transition: color 0.3s;
+}
+
+.nav-left a:hover,
+.nav-right a:hover {
+color: #555;
+}
+
+@media (max-width: 768px) {
+.main-header {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.nav-left,
+.nav-right {
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+}
+
+/* LogIn */
+
+.form-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem;
+}
+
+.form-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+    gap: 40px;
+    width: fit-content;
+}
+
+.titulo-login{
+    font-size: 2rem;
+    font-weight: 200;
+    margin-bottom: 50px;
+}
+
+#email-login, #name-login, #pass-login{
+    padding: 10px 0;
+    background-color: transparent;
+    color: black;
+    border: none;
+    border-bottom: 0.5px solid black;
+    width: 600px;
+    outline: none;
+}
+
+#email-login::placeholder, #name-login::placeholder, #pass-login::placeholder {
+    color: black;
+}
+
+.btn-login{
+    width: 400px;
+    color: white;
+    background-color: black;
+    padding: 0.5rem;
+    border-radius: 3px;
+    font-size: 0.7rem;
+    margin-top: 20px;
+}
+
+.aviso-login{
+    font-size: 0.6rem;
+}
+
+/* Redes */
+.blog, .blog2{
+    width: 100%;
+    padding: 1.5rem;
+}
+
+.img-blog, .img-correr-blog {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-items: center; 
+    
+}
+
+.blog img {
+    width: 600px; 
+    height: 550px;
+    object-fit: cover;
+    
+}
+
+.titulo-redes, .titulo-blog{
+    padding: 2rem;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.info-blog{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding: 15px;
+    gap: 10px;
+}
+
+.leer-mas{
+    max-width: fit-content;
+    color: black;
+    font-size: 0.9rem;
+}
+
+/* Footer */
+footer{
+    width: 100%;
+    height: 400px;
+    background-color: black;
+    display: flex;
+
+}
+
+.sec1, .sec2, .sec3{
+    width: 700px;
+    padding: 2rem;
+    height: 300px;
+    border-right: 1px solid white;
+    margin-top: 50px;
+    color: white;
+}
+.sec1 a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    font-weight: 100;
+}
+
+.titulo-footer{
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.politica, .contactos{
+    margin-bottom: 10px;
+}
+
+.sec3{
+    border: none;
+}
+
+.footer2 {
+    display: flex;
+    background-color: black;
+    justify-content: end;
+    border-top: 1px solid white;
+}
+
+.politica-otros{
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 0.8rem;
+}
