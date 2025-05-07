@@ -1,0 +1,300 @@
+/* Header y nav bar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+font-family: 'Roboto', sans-serif;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+main {
+    flex: 1;
+}    
+
+body {
+background-color: whitesmoke;
+color: #000;
+min-height: 100vh;
+}
+
+/* Encabezado */
+.main-header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0.1rem 2rem;
+background-color: whitesmoke;
+position: sticky;
+top: 0;
+z-index: 1000;
+}
+
+.nav-logo img {
+width: 50px;
+height: auto;
+}
+
+.nav-left,
+.nav-right {
+display: flex;
+gap: 1.5rem;
+align-items: center;
+}
+
+.nav-left a,
+.nav-right a {
+color: inherit;
+text-decoration: none;
+font-weight: 500;
+transition: color 0.3s;
+}
+
+.nav-left a:hover,
+.nav-right a:hover {
+color: #555;
+}
+
+/* Main */
+
+.shop-div{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    gap: 20px;
+}
+
+.titulo-descripcion{
+    margin-bottom: 30px;
+}
+
+.descripcion-sneak{
+    max-width: 25rem;
+    
+}
+
+.garantias, .info-vendedor{
+    margin-bottom: 15px;
+}
+
+#info1{
+    margin-top: 15px;
+}
+
+.garantias{
+    margin-top: 15px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+}
+
+/* Imagenes mini de muestra */
+
+.mini-a img {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.imagen-principal{
+    height: 800px;
+    width: 800px;
+    object-fit: cover;
+}
+
+.imagenes-mini{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    gap: 5px;
+    
+}
+
+/* Form y news letter */
+.info-news-letter{
+    display: flex;
+    background-color: #000;
+    margin-bottom: 2px;
+}
+
+.form-news-letter {
+    width: 50%;
+    display: grid;
+    place-content: center;
+    gap: 15px;
+
+}
+.imagen-news-letter{
+    width: 50%;
+    height: 35vh;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.titulo-news-letter, .titulo-encuentranos{
+    color: white;
+    font-size: 3rem;
+}
+.descripcion-news-letter, .descripcion-encuentranos{
+    color: white;
+    font-size: 1rem;
+}
+
+#email-news-letter{
+    padding: 10px 0;
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-bottom: 0.5px solid white;
+    width: 400px;
+    outline: none;
+}
+
+#email-news-letter::placeholder {
+    color: white;
+}
+
+.btn-unete{
+    background: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.encuentranos{
+    background-color: #000;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.ubi{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.ubi:hover{
+    background-color: #555;
+    transition: 0.2s ease ;
+}
+
+.blog, .blog2{
+    width: 100%;
+    padding: 1.5rem;
+}
+
+.img-blog, .img-correr-blog {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-items: center; 
+    
+}
+
+.blog img {
+    width: 600px; 
+    height: 550px;
+    object-fit: cover;
+    
+}
+
+.titulo-redes, .titulo-blog{
+    padding: 2rem;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.info-blog{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding: 15px;
+    gap: 10px;
+}
+
+.leer-mas{
+    max-width: fit-content;
+    color: black;
+    font-size: 0.9rem;
+}
+
+/* Footer */
+footer{
+    width: 100%;
+    height: 400px;
+    background-color: black;
+    display: flex;
+
+}
+
+.sec1, .sec2, .sec3{
+    width: 700px;
+    padding: 2rem;
+    height: 300px;
+    border-right: 1px solid white;
+    margin-top: 50px;
+    color: white;
+}
+.sec1 a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    font-weight: 100;
+}
+
+.titulo-footer{
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.politica, .contactos{
+    margin-bottom: 10px;
+}
+
+.sec3{
+    border: none;
+}
+
+.footer2 {
+    display: flex;
+    background-color: black;
+    justify-content: end;
+    border-top: 1px solid white;
+}
+
+.politica-otros{
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 0.8rem;
+}
+
+.img-correr{
+    width: 100%; 
+    height: 700px;
+    object-fit: cover;
+    padding: 15px;
+}
+
