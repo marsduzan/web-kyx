@@ -70,27 +70,23 @@ color: #555;
     gap: 20px;
 }
 
-.titulo-descripcion{
-    margin-bottom: 30px;
-}
-
 .descripcion-sneak{
     max-width: 25rem;
     
 }
 
-.garantias, .info-vendedor{
-    margin-bottom: 15px;
-}
-
-#info1{
-    margin-top: 15px;
-}
-
 .garantias{
-    margin-top: 15px;
-    border-bottom: 1px solid black;
-    border-top: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid grey;
+    border-top: 1px solid grey;
+}
+
+.info-sneaker{
+    max-width: 100%;
 }
 
 /* Imagenes mini de muestra */
@@ -100,6 +96,12 @@ color: #555;
     height: 100px;
     border-radius: 5px;
     object-fit: cover;
+}
+
+.mini-a:active{
+    border: 2px solid black;
+    border-radius: 5px;
+    
 }
 
 .imagen-principal{
@@ -116,6 +118,50 @@ color: #555;
     width: auto;
     gap: 5px;
     
+}
+
+.titulo-sneak{
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
+
+.precio-sneak{
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+}
+
+/* Tallas */
+
+.tallas-div{
+    
+    border-bottom: 1px solid grey;
+    border-top: 1px solid grey;
+    gap: 10px;
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    
+}
+
+.tallas{
+    height: 40px;
+    background-color: transparent;
+    font-size: 0.9rem;
+    border: 0.5px solid grey;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.tallas:active{
+    border: 2px solid black;
+}
+
+/* Pago */
+
+.botones-pago{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 /* Form y news letter */

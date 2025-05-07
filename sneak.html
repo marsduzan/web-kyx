@@ -34,10 +34,10 @@
         <div class="imagenes-mini">
             <a href="#" class="mini-a"><img src="./ecommerceimg/new balance 1000.png" alt="Mini Imagen" class="imagen-opcion"></a>
             <a href="#" class="mini-a"><img src="./ecommerceimg/new balance 10002.jpg" alt="Mini Imagen" class="imagen-opcion"></a>
-            <a href="#" class="mini-a"><img src="./img/imagenerror.jpg" alt="Mini Imagen" class="imagen-opcion"></a>
-            <a href="#" class="mini-a"><img src="./img/imagenerror.jpg" alt="Mini Imagen" class="imagen-opcion"></a>
-            <a href="#" class="mini-a"><img src="./img/imagenerror.jpg" alt="Mini Imagen" class="imagen-opcion"></a>
-            <a href="#" class="mini-a"><img src="./img/imagenerror.jpg" alt="Mini Imagen" class="imagen-opcion"></a>
+            <a href="#" class="mini-a"><img src="./ecommerceimg/unnamed.jpg" alt="Mini Imagen" class="imagen-opcion"></a>
+            <a href="#" class="mini-a"><img src="./ecommerceimg/unnamed.jpg" alt="Mini Imagen" class="imagen-opcion"></a>
+            <a href="#" class="mini-a"><img src="./ecommerceimg/unnamed.jpg" alt="Mini Imagen" class="imagen-opcion"></a>
+            <a href="#" class="mini-a"><img src="./ecommerceimg/unnamed.jpg" alt="Mini Imagen" class="imagen-opcion"></a>
         </div>
         <div class="imagen-grande">
             <img src="./ecommerceimg/new balance 1000.png" alt="Imagen Principal" class="imagen-principal">
@@ -45,10 +45,29 @@
         <div class="info-sneaker">
             <h2 class="titulo-sneak">New Blance 1000</h2>
             <p class="precio-sneak">180 €</p>
-            <div class="tallas"></div>
+            <div class="tallas-div">
+                <button class="tallas">33</button>
+                <button class="tallas">34</button>
+                <button class="tallas">35</button>
+                <button class="tallas">36</button>
+                <button class="tallas">37</button>
+                <button class="tallas">38</button>
+                <button class="tallas">39</button>
+                <button class="tallas">40</button>
+                <button class="tallas">42</button>
+                <button class="tallas">43</button>
+                <button class="tallas">44</button>
+                <button class="tallas">45</button>
+            </div>
             <div class="botones-pago">
-                <select name="cantidad" id="cantidad" class="cantidad"></select>
-                <button class="add-cesta"></button>
+                <select name="cantidad" id="cantidad" class="cantidad" onchange="seleccionarTalla">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <button class="add-cesta">AÑADIR A LA CESTA</button>
             </div>
             <div class="garantias">  
                 <p id="info1" class="info-vendedor">ENTREGA SEGURA EN 48 HORAS</p>
