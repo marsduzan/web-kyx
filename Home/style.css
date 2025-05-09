@@ -81,6 +81,47 @@ margin-bottom: 0.5rem;
 font-size: 1.5rem;
 }
 
+/* Menu */
+
+.menu-sneak{
+    height: 700px;
+    width: 100%;
+    padding: 2rem 2.5rem;
+    background-color: whitesmoke;
+    position: absolute; 
+    top: 90px;
+    left: 0;
+    z-index: 1000;
+}
+
+.content-menu{
+    display: flex;
+    justify-content: space-between;
+}
+
+.lista-marcas li{
+    list-style-type: none;
+}
+
+.lista-marcas a{
+    text-decoration: none;
+    color: #000;
+}
+.lista-marcas{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.fotos-menu{
+    display: flex;
+    gap: 20px;
+    padding: 0 5rem;
+}
+.fotos-m{
+    height: 600px;
+    width: 600px;
+}
 /* Sección de tendencias */
 .tnd {
 text-align: center;

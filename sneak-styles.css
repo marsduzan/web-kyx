@@ -65,14 +65,19 @@ color: #555;
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    height: auto;
+    min-width: 100vh;
     margin-top: 3rem;
     margin-bottom: 3rem;
-    gap: 20px;
+    gap: 30px;
 }
 
 .descripcion-sneak{
     max-width: 25rem;
-    
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .garantias{
@@ -87,37 +92,18 @@ color: #555;
 
 .info-sneaker{
     max-width: 100%;
+    position: sticky;
+    top: 90px;
+    height: fit-content;
 }
 
 /* Imagenes mini de muestra */
 
-.mini-a img {
-    width: 100px;
-    height: 100px;
-    border-radius: 5px;
-    object-fit: cover;
-}
-
-.mini-a:active{
-    border: 2px solid black;
-    border-radius: 5px;
-    
-}
-
 .imagen-principal{
     height: 800px;
-    width: 800px;
+    width: 1000px;
     object-fit: cover;
-}
 
-.imagenes-mini{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: auto;
-    gap: 5px;
-    
 }
 
 .titulo-sneak{
@@ -130,6 +116,11 @@ color: #555;
     margin-bottom: 2rem;
 }
 
+.imagen-grande{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 /* Tallas */
 
 .tallas-div{
@@ -162,6 +153,24 @@ color: #555;
 .botones-pago{
     padding-top: 2rem;
     padding-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.add-cesta{
+    padding: 1.2rem;
+    width: 300px;
+    color: white;
+    background-color: #000;
+    
+}
+
+#cantidad{
+    padding: 1rem;
+    font-size: 1rem;
+    
 }
 
 /* Form y news letter */

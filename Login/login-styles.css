@@ -78,6 +78,7 @@ color: #555;
     align-items: center;
     flex-direction: column;
     border-radius: 5px;
+    max-width: 400px;
     gap: 40px;
     width: fit-content;
 }
@@ -94,7 +95,7 @@ color: #555;
     color: black;
     border: none;
     border-bottom: 0.5px solid black;
-    width: 600px;
+    width: 400px;
     outline: none;
 }
 
