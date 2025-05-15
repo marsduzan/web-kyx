@@ -44,6 +44,10 @@ font-weight: 500;
 transition: color 0.3s;
 }
 
+.nav-left a:hover{
+    text-decoration: underline;
+}
+
 /* Banner principal */
 .section-banner {
 position: relative;
@@ -80,19 +84,25 @@ font-size: 1.5rem;
 
 .menu-sneak{
     display: none;
-    height: 700px;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: height 0.3s ease, opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.menu-sneak.active{
+    display: block;
+    height: 600px;
     width: 100%;
     padding: 2rem 2.5rem;
     background-color: whitesmoke;
     position: absolute; 
     top: 90px;
     left: 0;
-    z-index: 1000;
+    opacity: 1;
+    pointer-events: auto;
     
-}
-
-.sneakk:hover .menu-sneak{
-    display:block;
 }
 
 .content-menu{
@@ -116,17 +126,21 @@ font-size: 1.5rem;
     display: flex;
     flex-direction: column;
     gap: 10px;
+    margin-left: 75px;
 }
 
 .fotos-menu{
     display: flex;
     gap: 20px;
     padding: 0 5rem;
+    margin-right: 200px;
 }
 .fotos-m{
-    height: 600px;
-    width: 600px;
+    height: 500px;
+    width: 500px;
 }
+
+
 /* Sección de tendencias */
 .tnd {
 text-align: center;
