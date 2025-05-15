@@ -25,27 +25,31 @@ z-index: 1000;
 }
 
 .nav-logo img {
-width: 50px;
+width: 40px;
 height: auto;
 }
 
 .nav-left,
 .nav-right {
 display: flex;
-gap: 1.5rem;
+gap: 2rem;
 align-items: center;
 }
 
-.nav-left a,
-.nav-right a {
+.link-header {
 color: inherit;
 text-decoration: none;
-font-weight: 500;
 transition: color 0.3s;
+font-size: 0.8rem;
 }
 
-.nav-left a:hover{
+.link-header:hover{
     text-decoration: underline;
+}
+
+.icon-nav{
+    font-size: 1.2rem;
+    color: #000;
 }
 
 /* Banner principal */
@@ -98,7 +102,30 @@ font-size: 1.5rem;
     padding: 2rem 2.5rem;
     background-color: whitesmoke;
     position: absolute; 
-    top: 90px;
+    top: 74px;
+    left: 0;
+    opacity: 1;
+    pointer-events: auto;
+    
+}
+
+.menu-acc{
+    display: none;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: height 0.3s ease, opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.menu-acc.active{
+    display: block;
+    height: 600px;
+    width: 100%;
+    padding: 2rem 2.5rem;
+    background-color: whitesmoke;
+    position: absolute; 
+    top: 74px;
     left: 0;
     opacity: 1;
     pointer-events: auto;
@@ -110,23 +137,22 @@ font-size: 1.5rem;
     justify-content: space-between;
 }
 
-.lista-marcas li{
+.li-lista {
     list-style-type: none;
+    color: #000;
+    text-decoration: none;
+    font-size: 0.9rem;
 }
 
-.lista-marcas li:hover{
+.li-lista:hover{
     text-decoration: underline;
 }
 
-.lista-marcas a{
-    text-decoration: none;
-    color: #000;
-}
 .lista-marcas{
     display: flex;
     flex-direction: column;
     gap: 10px;
-    margin-left: 75px;
+    margin-left: 70px;
 }
 
 .fotos-menu{
@@ -139,6 +165,19 @@ font-size: 1.5rem;
     height: 500px;
     width: 500px;
 }
+
+.titulos-lista{
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.vertodo-lista{
+    text-decoration: underline;
+    font-size: 0.8rem;
+    margin-bottom: 20px;
+    color: #000;
+}
+
 
 
 /* Sección de tendencias */
