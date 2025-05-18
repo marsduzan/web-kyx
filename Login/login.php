@@ -13,22 +13,8 @@
 </head>
 <body>
     <!--Header-->
-    <header class="main-header">
-        <nav class="nav-left">
-            <div class="nav-logo">
-                <a href="../home/home.html" id="logo-kyx"><img src="../img/Kyx Logo.png" alt="Kyx Logo" /></a>
-            </div>
-            <a href="#">Sneakers</a>
-            <a href="#">Accesorios</a>
-            <a href="#">Ofertas</a>
-            <a href="#">Contacto</a>
-        </nav>
-        <nav class="nav-right">
-            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-            <a href="http://127.0.0.7:5500/login.html"><i class="fa-solid fa-circle-user"></i></a>
-            <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
-        </nav>
-    </header>
+    <?php include('../includes/header.php'); ?>
+    
     <main>
         <section class="form-login">
             <form action="#" method="post" class="form-div">
