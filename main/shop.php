@@ -4,38 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop</title>
-    <link rel="stylesheet" href="sneak-styles.css" />
+    <link rel="stylesheet" href="/assets/css/shop-styles.css" />
+    <link rel="stylesheet" href="/assets/css/header-styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="icon" href="img/favicon.png" type="image/png" />
+    <link rel="icon" href="../img/favicon.png" type="image/png" />
 </head>
 <body>
     <!--Header y nav bar-->
-<header class="main-header">
-    <nav class="nav-left">
-        <div class="nav-logo">
-            <a href="http://127.0.0.7:5500/home.html" id="logo-kyx"><img src="../img/Kyx Logo.png" alt="Kyx Logo" /></a>
-        </div>
-        <a href="#">Sneakers</a>
-        <a href="#">Accesorios</a>
-        <a href="#">Ofertas</a>
-        <a href="#">Contacto</a>
-    </nav>
-    <nav class="nav-right">
-        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-        <a href="../login/login.html"><i class="fa-solid fa-circle-user"></i></a>
-        <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
-    </nav>
-</header>
+<?php include('../includes/header.php'); ?>
 <main>
     <section class="shop-div">
         <div class="imagen-grande">
-            <img src="./ecommerceimg/nike calm.png" alt="Imagen Principal" class="imagen-principal">
-            <img src="./ecommerceimg/nike calm2.png" alt="Imagen Principal" class="imagen-principal">
-            <img src="./ecommerceimg/nike calm.png" alt="Imagen Principal" class="imagen-principal">
-            <img src="./ecommerceimg/nike calm2.png" alt="Imagen Principal" class="imagen-principal">
+            <img src="../ecommerceimg/nike calm.png" alt="Imagen Principal" class="imagen-principal">
+            <img src="../ecommerceimg/nike calm2.png" alt="Imagen Principal" class="imagen-principal">
+            <img src="../ecommerceimg/nike calm.png" alt="Imagen Principal" class="imagen-principal">
+            <img src="../ecommerceimg/nike calm2.png" alt="Imagen Principal" class="imagen-principal">
         </div>
         <div class="info-sneaker">
             <h2 class="titulo-sneak">Nike Calm</h2>

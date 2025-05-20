@@ -3,7 +3,7 @@
 <header class="main-header">
 <nav class="nav-left">
     <div class="nav-logo">
-        <a href="../home/home.php" id="logo-kyx"><img src="../img/Kyx Logo.png" alt="Kyx Logo" /></a>
+        <a href="/main/index.php" id="logo-kyx"><img src="/img/Kyx Logo.png" alt="Logo" /></a>
     </div>
     <div class="sneakk">
         <a href="#" class="link-header">SNEAKERS</a>
@@ -72,7 +72,7 @@
 </nav>
 <nav class="nav-right">
     <a href="#" class="icon-nav"><i class="fa-solid fa-magnifying-glass"></i></a>
-    <a href="../login/login.php" class="icon-nav"><i class="fa-solid fa-circle-user"></i></a>
+    <a href="/main/login.php" class="icon-nav"><i class="fa-solid fa-circle-user"></i></a>
     <a href="#" class="icon-nav"><i class="fa-solid fa-bag-shopping"></i></a>
 </nav>
 </header>
